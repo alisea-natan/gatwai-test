@@ -4,11 +4,12 @@ Task 1: You are the owner of an ice cream business and you want to develop a mod
 
 Task 2: Get the current weather in Kyiv and make a forecast for the next 10 days. Use Open Weather Map for this task (https://openweathermap.org/). 
 
-
 Task 3: Forecasting of the personnel department  
 Determine the number of employees who left the company and who are working
 Which technology contributes the most to predicting the target indicator?
 Predicting employees who may leave the company
 
 Database: https://drive.google.com/file/d/1WHnsmG9crcL6demy683yHSa-FFofNSa1/view?usp=sharing
+
+Task 4: A command-line tool that gets the city name and returns the current weather forecast. Open Weather Map API (https://openweathermap.org/) is used to obtain weather data and analyze it
 
