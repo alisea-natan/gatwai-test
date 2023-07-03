@@ -212,11 +212,14 @@ def start():
 
         pred = make_prediction(game_stat_dataset, next_match_stat)
         if pred == "A":
-            print(f"Team {next_match['TeamAName']} will win.")
+            print(f"Team {next_match['TeamAName']} will win against {next_match['TeamBName']} "
+                  f"on {next_match['DateTime']}.")
         elif pred == "B":
-            print(f"Team {next_match['TeamBName']} will win.")
+            print(f"Team {next_match['TeamBName']} will win against {next_match['TeamAName']} "
+                  f"on {next_match['DateTime']}.")
         else:
-            print("Draw")
+            print(f"Draw will be between {next_match['TeamAName']} and {next_match['TeamBName']} "
+                  f"on {next_match['DateTime']}")
     else:
         print("Game over, no more competitions left.")
 

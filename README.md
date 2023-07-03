@@ -211,8 +211,8 @@ So, current results are not so good, probability of success is about 50%, just a
 
 **Output**
 
-    Draw
+    Draw will be between {team_name} and {team2_name} on {date}.
 
 or
 
-    Team {team_name} will win.
+    Team {team_name} will win against {team2_name} on {date}.
