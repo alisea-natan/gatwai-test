@@ -201,8 +201,8 @@ def start():
         season = next_match["Season"]
         round_ids = find_round_id(base_url, API_KEY, season)
         team_statistics_dataset = calculate_team_statistics(round_ids, base_url, API_KEY)
-        # if not os.path.isfile(os.path.join("data", "teams5.csv")):
-        #     team_statistics_dataset.to_csv(os.path.join("data", "teams5.csv"))
+        if not os.path.isfile(os.path.join("data", "teams5.csv")):
+            team_statistics_dataset.to_csv(os.path.join("data", "teams5.csv"))
         game_stat_dataset = calculate_schedule_statistic(round_ids, base_url, API_KEY, team_statistics_dataset)
         if not os.path.isfile(os.path.join("data", "game5.csv")):
             game_stat_dataset.to_csv(os.path.join("data", "game5.csv"))
