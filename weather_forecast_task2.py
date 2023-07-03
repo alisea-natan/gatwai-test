@@ -27,14 +27,16 @@ def weather_in_kyiv():
     else:
         print("Error fetching current weather data.")
 
-    # Fetch forecast data
+    # Parse and display forecast for the next 10 days is available only with paid subscription
+    # In case of paid subscription you should use this url:
+    # url = f"http://api.openweathermap.org/data/2.5/forecast/daily?q={city_name}&cnt=10&appid={API_KEY}"
+    # As for test task I use free api key, only 3-hours difference is available for me to show you
     response = requests.get(forecast_url)
     if response.status_code == 200:
         forecast_data = response.json()
 
-        # Parse and display forecast for the next 10 days
         forecast_list = forecast_data['list']
-        print(f"\n10-day Weather Forecast for Kyiv:")
+        print(f"\n10-times Weather Forecast for Kyiv:")
         for forecast in forecast_list[:10]:
             forecast_timestamp = forecast['dt']
             forecast_date = datetime.datetime.fromtimestamp(forecast_timestamp)
